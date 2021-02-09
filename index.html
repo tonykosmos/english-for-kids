@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./public/bundle.js" defer></script>
+    <title>english-for-kids</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="burger-menu">
+                <nav class="header-mobile-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-list__item"><a class="nav-link nav-link_active">Main page</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Action (set 1)</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Action (set 2)</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Colors</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Food</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Animal (set 1)</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Animal (set 2)</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Clothes</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Emotion</a></li>
+                        <li class="header-nav-list__item"><a class="nav-link">Statistic</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-container">
+                <img src="./assets/icons/menu-black-36dp.svg" alt="menu-icon" class="burger-menu-icon">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="answers"></div>
+            <div class="categories">
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/draw.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Action (set 1)</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/run.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Action (set 2)</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/blue.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Colors</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/apple.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Food</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/cat.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Animal (set 1)</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/rabbit.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Animal (set 2)</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/blouse.jpg" alt="category-image" class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Clothes</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="card-bg">
+                    <img src="./assets/images/happy.jpg" alt="category-image"class="item-img">
+                    <div class="item-word">
+                        <p class="item-word-text">Emotion</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-list hidden">
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image"  class="card-img">
+                            <div class="card-word">
+                              <p class="card-word-text"></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                            <div class="rotate-icon">
+                                <img src="./assets/icons/rotate-icon.svg" alt="rotate-icon">
+                            </div>
+                        </div>
+                        <audio src="" class="word-recording"></audio>
+                    </div>
+                    <div class="back">
+                        <div class="card-bg">
+                            <img src="" alt="card-image" class="card-img">
+                            <div class="card-word">
+                                <p class="card-word-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic-page hidden">
+                <div class="reset-statistic">
+                    <button class="reset-statistic__btn">Reset statistic</button>
+                </div>
+                <table class="statistic">
+                    <tr class="word-statistic">
+                        <th class="statistic-type">Category</th>
+                        <th class="statistic-type">Word</th>
+                        <th class="statistic-type">Translation</th>
+                        <th class="statistic-type">Train Clicked</th>
+                        <th class="statistic-type">Correct</th>
+                        <th class="statistic-type">Wrong</th>
+                        <th class="statistic-type">% accuracy</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="start-game">
+                <button class="start-game__btn">Start game</button>
+            </div>
+            <audio src="./assets/audio/correct.mp3" class="correct-answer-sound"></audio>
+            <audio src="./assets/audio/wrong.mp3" class="wrong-answer-sound"></audio>
+            <audio src="./assets/audio/success.mp3" class="success-result"></audio>
+            <audio src="./assets/audio/failure.mp3" class="failure-result"></audio>
+            <div class="end-game-modal">
+                <img src="" alt="end-game-img" class="modal-img">
+                <p class="end-game-message"></p>
+            </div>
+        </main>
+        <footer class="footer">
+          <div class="footer-content">
+            <p class="footer-content-text">
+              <a href="https://github.com/tonykosmos" class="github-link">github.com/tonykosmos</a>
+            </p>
+            <a href="https://rs.school/js/">
+              <img src="./assets/images/rs_school_js.svg" alt="rs-school-logo" class="footer-logo">
+            </a>
+            <p class="footer-content-text">, 2020</p>
+          </div>
+        </footer>
+    </div>
+    <div class="shadow"></div>
+</body>
+</html>
