@@ -221,5 +221,6 @@ const controller = new AppController();
 controller.showWordTranslation();
 controller.hideWordTranslation();
 controller.playWordAudioRecording();
-controller.addButtonEventListeners();
 controller.addBurgerMenuEventListeners();
+controller.addButtonEventListeners();
+
