@@ -21,13 +21,13 @@ export default class AppController {
     const backSide = document.querySelectorAll('.back');
     const showTranslationButtons = document.querySelectorAll('.rotate-icon');
 
-    showTranslationButtons.forEach((elem, number) => {
-      elem.addEventListener('click', () => {
+    for (let i = 0; i < CATEGORY_WORDS_QUANTITY; i += 1) {
+      showTranslationButtons[i].addEventListener('click', () => {
         cardClicked = true;
-        frontSide[number].style.transform = 'rotateY(180deg)';
-        backSide[number].style.transform = 'rotateY(360deg)';
+        frontSide[i].style.transform = 'rotateY(180deg)';
+        backSide[i].style.transform = 'rotateY(360deg)';
       });
-    });
+    }
   }
 
   hideWordTranslation() {
@@ -35,13 +35,15 @@ export default class AppController {
     const frontSide = document.querySelectorAll('.front');
     const backSide = document.querySelectorAll('.back');
 
-    cardList.forEach((elem, number) => {
-      elem.addEventListener('click', () => {
-        frontSide[number].style.transform = '';
-        backSide[number].style.transform = '';
-        cardClicked = false;
+    for (let i = 0; i < CATEGORY_WORDS_QUANTITY; i += 1) {
+      cardList[i].addEventListener('mouseleave', () => {
+        if (cardClicked) {
+          frontSide[i].style.transform = '';
+          backSide[i].style.transform = '';
+          cardClicked = false;
+        }
       });
-    });
+    }
   }
 
   playWordAudioRecording() {
